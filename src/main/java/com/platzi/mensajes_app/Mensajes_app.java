@@ -38,6 +38,7 @@ public class Mensajes_app {
                     System.out.println("Opcion 3");
                     break;
                 case 4:
+                    MensajesService.borrarMensaje();
                     System.out.println("Opcion 4");
                     break;
                 default:

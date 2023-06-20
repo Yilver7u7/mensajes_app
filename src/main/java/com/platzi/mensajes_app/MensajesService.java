@@ -33,7 +33,8 @@ public class MensajesService {
     }
     
     public static void borrarMensaje(){
-        /*TO DO*/
+        int id_mensaje = Integer.parseInt(JOptionPane.showInputDialog("Indica el ID del mensaje que deseas eliminar"));
+        MensajesDAO.borrarMensajesDB(id_mensaje);
     }
     
     public static void editarMensaje(){
