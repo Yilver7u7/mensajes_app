@@ -17,6 +17,9 @@ public class Mensajes_app {
 
     public static void main(String[] args) throws SQLException {
         
+        
+        //pruebaConexionMain();
+        
         int opcion = 0;
         //System.out.println(opcion);
         
@@ -24,7 +27,8 @@ public class Mensajes_app {
             opcion = opciones();
             switch(opcion){
                 case 1:
-                    System.out.println("Opcion 1");
+                    MensajesService.crearMensaje();
+                    System.out.println("Mensajito gg");
                     break;
                 case 2:
                     System.out.println("Opcion 2");
@@ -36,7 +40,7 @@ public class Mensajes_app {
                     System.out.println("Opcion 4");
                     break;
                 default:
-                    System.out.println("Por favor escoja una opción");
+                    System.out.println("Por favor escoja una opción correcta");
                     break;
             }
         
@@ -60,8 +64,9 @@ public class Mensajes_app {
     }
     
     public static void pruebaConexionMain(){
+        /*TO DO*/
         try{
-            Connection conn = ConnectionFactory.establecerConexion();
+            Connection conn = ConnectionFactory.pruebitas();
             
             if(conn != null){
                 System.out.println("Conexión Exitosa, todo fine!!");

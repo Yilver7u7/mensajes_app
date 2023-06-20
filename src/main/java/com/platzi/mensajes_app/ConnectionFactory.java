@@ -19,6 +19,10 @@ public class ConnectionFactory {
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_app","root","");
     }
     
+    public static Connection pruebitas()throws SQLException{
+        return DriverManager.getConnection("jdbc:mysql://localhost/ComerSwift?useTimeZone=True&serverTimeZone=UTC"
+        ,"root","Yilverteamo320");
+    }
     
     /*"jdbc:mysql://localhost/ComerSwift?useTimeZone=True&serverTimeZone=UTC"
         ,"root","Yilverteamo320"*/
