@@ -14,9 +14,12 @@ public class MensajesService {
     
     
     public static void crearMensaje(){
+        //Se crean las variables que posteriormente almacenaran el valor en un objeto de tipo Mensajes
         String mensaje = JOptionPane.showInputDialog("Escriba su mensaje");
         String nombre_autor = JOptionPane.showInputDialog("Escriba el nombre del autor del mensaje");
         
+        //Se crea la instancia de objeto que maneja MensajesDAO con las variables creadas anteriormente
+        //Para que se puedan almacenar correctamente
         Mensajes registro = new Mensajes();
         registro.setMensaje(mensaje);
         registro.setAutor_mensaje(nombre_autor);
@@ -26,7 +29,7 @@ public class MensajesService {
     }
     
     public static void listarMensajes(){
-        /*TO DO*/
+        MensajesDAO.leerMensajesDB();
     }
     
     public static void borrarMensaje(){

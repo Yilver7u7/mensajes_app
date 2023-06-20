@@ -31,6 +31,7 @@ public class Mensajes_app {
                     System.out.println("Mensajito gg");
                     break;
                 case 2:
+                    MensajesService.listarMensajes();
                     System.out.println("Opcion 2");
                     break;
                 case 3:
